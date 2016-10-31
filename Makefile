@@ -2,6 +2,9 @@ examine-tarball: package
 	cd dist && tar xzf *.tar.gz && cd ..
 	tree dist
 
+examine-install:
+	./examine-install.sh
+
 install:
 	pip install .
 
@@ -12,6 +15,3 @@ clean:
 
 package: clean
 	python setup.py sdist
-
-pypi: package
-	twine upload dist/*.tar.gz
