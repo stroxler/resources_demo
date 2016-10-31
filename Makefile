@@ -1,8 +1,6 @@
-test:
-	py.test
-
-dev-install:
-	pip install -e .
+examine-tarball: package
+	cd dist && tar xzf *.tar.gz && cd ..
+	tree dist
 
 install:
 	pip install .
@@ -14,10 +12,6 @@ clean:
 
 package: clean
 	python setup.py sdist
-
-examine: package
-	cd dist && tar xzf *.tar.gz && cd ..
-	tree dist
 
 pypi: package
 	twine upload dist/*.tar.gz
