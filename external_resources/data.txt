@@ -1,0 +1,1 @@
+Here is some external data, not inside the package folder

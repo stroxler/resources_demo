@@ -1,0 +1,2 @@
+Here's some internal data, in the package directory and also in its
+own resources directory

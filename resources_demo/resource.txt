@@ -1,0 +1,2 @@
+Here's a resource in the package directory but not in its own
+resource directory.
